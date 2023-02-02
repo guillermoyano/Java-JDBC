@@ -1,0 +1,58 @@
+package tienda.en.clase.entidades;
+
+public class Producto {
+
+    protected int codigo;
+    protected String nombre;
+    protected Double precio;
+    protected int codigoFabricante;
+
+    public Producto() {
+    }
+
+    public Producto(int codigo, String nombre, Double precio, int codigoFabricante) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.codigoFabricante = codigoFabricante;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+
+    public int getCodigoFabricante() {
+        return codigoFabricante;
+    }
+
+    public void setCodigoFabricante(int codigoFabricante) {
+        this.codigoFabricante = codigoFabricante;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto{" + "codigo=" + codigo + ", nombre=" + nombre + ", precio=" + precio + ", codigoFabricante=" + codigoFabricante + '}';
+    }
+    
+    
+}
